@@ -32,6 +32,7 @@
             this.inputBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
+            this.outputLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // calcButton
@@ -68,12 +69,23 @@
             this.titleLabel.TabIndex = 3;
             this.titleLabel.Text = "Pizza Pie Palooza";
             // 
+            // outputLabel
+            // 
+            this.outputLabel.AutoSize = true;
+            this.outputLabel.Font = new System.Drawing.Font("Franklin Gothic Medium", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.Location = new System.Drawing.Point(70, 199);
+            this.outputLabel.Name = "outputLabel";
+            this.outputLabel.Size = new System.Drawing.Size(131, 26);
+            this.outputLabel.TabIndex = 4;
+            this.outputLabel.Text = "Your Total is: ";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Coral;
             this.ClientSize = new System.Drawing.Size(384, 261);
+            this.Controls.Add(this.outputLabel);
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputBox);
@@ -91,6 +103,7 @@
         private System.Windows.Forms.TextBox inputBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label titleLabel;
+        public System.Windows.Forms.Label outputLabel;
     }
 }
 
